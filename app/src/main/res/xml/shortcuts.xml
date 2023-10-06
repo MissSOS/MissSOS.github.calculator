@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/fundamental"
+        android:shortcutId="first"
+        android:shortcutLongLabel="@string/simple_calculator"
+        android:shortcutShortLabel="@string/simple_calculator">
+        <intent
+            android:action="android.intent.ation.VIEW"
+            android:targetClass="com.example.myapplication.calculator"
+            android:targetPackage="com.example.myapplication"
+
+            />
+
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/binary"
+        android:shortcutId="second"
+        android:shortcutLongLabel="@string/binary"
+        android:shortcutShortLabel="@string/binary">
+        <intent
+            android:action="android.intent.ation.VIEW"
+            android:targetClass="com.example.myapplication.transform"
+            android:targetPackage="com.example.myapplication"
+
+            />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

@@ -6,18 +6,57 @@
     android:orientation="vertical"
     android:padding="5dp">
 
-
-    <TextView
-        android:id="@+id/tv_result"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.2"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="355dp"
+            android:layout_height="match_parent"
+
+            android:gravity="right|bottom"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/copyBtn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="3dp"
+            android:background="@drawable/img_5"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="355dp"
+        android:layout_height="match_parent"
+
         android:gravity="right|bottom"
         android:lines="3"
         android:text="0"
-        android:textColor="@color/white"
-        android:textSize="28sp" />
-
+        android:textColor="#CDCBCB"
+        android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_x"
+            android:layout_width="29dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="0.3dp"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/img_6"
+            />
+    </LinearLayout>
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -31,8 +70,8 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
-            android:text="CE"
+            android:background="@drawable/btn_nine_selaector"
+            android:text="+|-"
             android:textSize="35sp" />
 
         <Button
@@ -41,7 +80,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="÷"
             android:textSize="35sp" />
 
@@ -51,7 +90,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="×"
             android:textSize="35sp" />
 
@@ -61,8 +100,9 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_select"
             android:text="C"
+            android:textColor="@color/white"
             android:textSize="35sp" />
 
         <Button
@@ -71,7 +111,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="7"
             android:textSize="35sp" />
 
@@ -81,7 +121,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="8"
             android:textSize="35sp" />
 
@@ -91,7 +131,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="9"
             android:textSize="35sp" />
 
@@ -101,7 +141,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="＋"
             android:textSize="35sp" />
 
@@ -111,7 +151,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="4"
             android:textSize="35sp" />
 
@@ -121,7 +161,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="5"
             android:textSize="35sp" />
 
@@ -131,7 +171,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="6"
             android:textSize="35sp" />
 
@@ -141,7 +181,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="－"
             android:textSize="35sp" />
 
@@ -151,7 +191,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="1"
             android:textSize="35sp" />
 
@@ -161,7 +201,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="2"
             android:textSize="35sp" />
 
@@ -171,7 +211,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="3"
             android:textSize="35sp" />
 
@@ -181,7 +221,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:scaleType="centerCrop"
             android:src="@drawable/radical"
             android:text="CE"
@@ -193,7 +233,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="1/x"
             android:textSize="35sp" />
 
@@ -203,7 +243,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="0"
             android:textSize="35sp" />
 
@@ -213,7 +253,7 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_nine_selaector"
             android:text="."
             android:textSize="35sp" />
 
@@ -223,8 +263,9 @@
             android:layout_height="94dp"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:background="@drawable/img"
+            android:background="@drawable/btn_select"
             android:text="="
+            android:textColor="@color/white"
             android:textSize="35sp" />
 
 

@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">计算器</string>
     <string name="simple_calculator">基础计算器</string>
+    <string name="binary">进制转换</string>
+
 
 </resources>
